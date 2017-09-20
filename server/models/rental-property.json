@@ -1,0 +1,62 @@
+{
+  "name": "RentalProperty",
+  "plural": "RentalProperties",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "locationId": {
+      "type": "string",
+      "required": true
+    },
+    "rent" : {
+      "type": "string",
+      "required": false
+    },
+    "advance" : {
+      "type": "string",
+      "required": false
+    },
+    "areaSqft" : {
+      "type": "string",
+      "required": false
+    },
+    "description" : {
+      "type": "string",
+      "required": false
+    },
+    "bedrooms" : {
+      "type" : "string",
+      "required": false
+    },
+    "furnishing" : {
+      "type" : "string",
+      "required": false
+    },
+    "city" : {
+      "type" : "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "Location": {
+      "type": "belongsTo",
+      "model": "Location",
+      "foreignKey": "locationId"
+    },
+    "PropertyImage" :{
+      "type": "hasMany",
+      "model": "PropertyImage",
+      "foreignKey": "propertyId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
