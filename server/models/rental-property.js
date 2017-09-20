@@ -63,9 +63,9 @@ module.exports = function(Rentalproperty) {
                 _queryParams = Object.assign({bedrooms : searchParam.bedrooms},_queryParams)
             }
 
-            console.log('==============_queryParams======================');
-            console.log(_queryParams);
-            console.log('===============_queryParams=====================');
+            // console.log('==============_queryParams======================');
+            // console.log(_queryParams);
+            // console.log('===============_queryParams=====================');
             let query = {
                 "where" : _queryParams,
                 "include" : {
