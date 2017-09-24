@@ -15,32 +15,32 @@
       "type": "string",
       "required": true
     },
-    "rent" : {
+    "rent": {
       "type": "string",
       "required": false
     },
-    "advance" : {
+    "advance": {
       "type": "string",
       "required": false
     },
-    "areaSqft" : {
+    "areaSqft": {
       "type": "string",
       "required": false
     },
-    "description" : {
+    "description": {
       "type": "string",
       "required": false
     },
-    "bedrooms" : {
-      "type" : "string",
+    "bedrooms": {
+      "type": "string",
       "required": false
     },
-    "furnishing" : {
-      "type" : "string",
+    "furnishing": {
+      "type": "string",
       "required": false
     },
-    "city" : {
-      "type" : "string",
+    "city": {
+      "type": "string",
       "required": false
     }
   },
@@ -51,7 +51,7 @@
       "model": "Location",
       "foreignKey": "locationId"
     },
-    "PropertyImage" :{
+    "PropertyImage": {
       "type": "hasMany",
       "model": "PropertyImage",
       "foreignKey": "propertyId"

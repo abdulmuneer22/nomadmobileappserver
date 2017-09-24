@@ -28,13 +28,3 @@ boot(app, __dirname, function(err) {
     app.start();
 });
 
-// db.createUser({
-//   user : "rentalAppUser",
-//   pwd : "1234567890",
-//   roles : [
-//     {
-//       role : "readWrite",
-//       db : "RentalAPP"
-//     }
-//   ]
-// })
