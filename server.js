@@ -1,15 +1,22 @@
 // import bodyParser from 'body-parser';
-import schema from './schema';
-
+import typeDefs from './schema';
+import resolvers from './resolvers'
+import './config/db'
 const graphqlHTTP = require('express-graphql');
-
+import {makeExecutableSchema} from 'graphql-tools'
 const express = require('express');
-
 const app = express();
 
-app.use('/graphql', graphqlHTTP({
+var schema = makeExecutableSchema({
+  typeDefs,
+  resolvers
+})
+
+app.use('/graphql', graphqlHTTP({ 
   schema,
   graphiql: true,
 }));
 
-app.listen(4000);
+app.listen( 4000,() => {
+  console.log('Running application on localhost:4000')
+});
