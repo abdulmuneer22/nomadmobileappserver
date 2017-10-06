@@ -24,12 +24,31 @@ type Airport {
     size: String
 }
 
+type City {
+    _id : ID!
+    image: String,
+    name: String,
+    air_quality_now: Float,
+    air_quality: Float,
+    latitude: String,
+    longitude: String,
+    country: String,
+    state_code: String,
+    state: String,
+    internet_speed: Float,
+    air_quality_score: Float,
+    rank: Float,
+    temperatureC: Float,
+    temperatureF: Float,
+    internet_score: Float,
+    leisure_quality: Float,
+    safety_level: Float,
+}
 
 type Query {
     searchAirport(name : String!) : [Airport]
+    searchCities(name : String!) :[City]
 }
-
-
 
 schema {
     query : Query

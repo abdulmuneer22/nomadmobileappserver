@@ -3,7 +3,7 @@ import { makeExecutableSchema } from 'graphql-tools';
 import typeDefs from './graphql/schema';
 import resolvers from './graphql/resolvers';
 import '../server/config/db';
-// import Airport from './rest/models/AirportModel';
+// import Cities from './rest/models/CitiesModel';
 
 const graphqlHTTP = require('express-graphql');
 
@@ -26,11 +26,11 @@ app.listen(4000, () => {
 });
 
 
-// const airportsData = require('./airports');
+// const citydata = require('./cities');
 
 // // console.log("airports data" , airportsData);
-// airportsData.forEach((itm) => {
-//   const airport = itm;
-//   Airport.create(airport);
+// citydata.forEach((itm) => {
+//   const city = itm;
+//   Cities.create(city);
 // });
 
