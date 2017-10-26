@@ -1,0 +1,59 @@
+{
+  "name": "destination",
+  "plural": "Destinations",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "OriginName": {
+      "type": "string",
+      "required": true,
+      "default": "OriginName"
+    },
+    "CityType": {
+      "type": "string",
+      "required": false,
+      "default": "[Beach || Cheap || OutDoor || Culture || Nightlife || DigitalNomadling]"
+    },
+    "TripMonth": {
+      "type": "string",
+      "required": false,
+      "default": "[Cheapest || Next 10 Months]"
+    },
+    "Budget": {
+      "type": "string",
+      "required": true,
+      "default": "[Cheal || Med || High]"
+    },
+    "Region": {
+      "type": "string",
+      "required": true,
+      "default": "[Asia || Afric etc]"
+    },
+    "TripType": {
+      "type": "string",
+      "required": true,
+      "default": "[Oneway || Two Way]"
+    },
+    "UserData": {
+      "type": "object",
+      "required": true,
+      "default": "[Searched User Data]"
+    },
+    "SuccessRate": {
+      "type": "string",
+      "required": true,
+      "default": "[Times people clicked on result]"
+    },
+    "Results": {
+      "type": "array",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

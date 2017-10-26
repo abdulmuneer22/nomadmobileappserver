@@ -1,7 +1,7 @@
 {
-  "name": "Customer",
-  "plural": "Customers",
-  "base": "User",
+  "name": "culture-city",
+  "plural": "culture-cities",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true

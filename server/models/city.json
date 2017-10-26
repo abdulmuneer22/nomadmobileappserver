@@ -1,0 +1,60 @@
+{
+  "name": "city",
+  "plural": "Cities",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": false,
+      "default": ""
+    },
+    "image": {
+      "type": "string",
+      "required": false,
+      "default": ""
+    },
+    "country": {
+      "type": "string",
+      "required": false,
+      "default": ""
+    },
+    "state": {
+      "type": "string",
+      "required": false,
+      "default": ""
+    },
+    "state_code": {
+      "type": "string",
+      "required": false,
+      "default": ""
+    },
+    "latitude": {
+      "type": "string",
+      "required": false,
+      "default": ""
+    },
+    "longitude": {
+      "type": "string",
+      "required": false,
+      "default": ""
+    },
+    "temperatureC": {
+      "type": "string",
+      "required": false,
+      "default": ""
+    },
+    "temperatureF": {
+      "type": "string",
+      "required": false,
+      "default": ""
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

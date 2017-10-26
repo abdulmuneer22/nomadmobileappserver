@@ -1,6 +1,6 @@
 {
-  "name": "Owner",
-  "plural": "Owners",
+  "name": "beach-city",
+  "plural": "beach-cities",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {

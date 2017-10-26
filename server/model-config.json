@@ -13,28 +13,36 @@
       "./mixins"
     ]
   },
-  "Customer": {
-    "dataSource": "db",
-    "public": true
-  },
-  "RentalProperty": {
-    "dataSource": "db",
-    "public": true
-  },
-  "Owner": {
-    "dataSource": "db",
-    "public": true
-  },
-  "Location": {
-    "dataSource": "db",
-    "public": true
-  },
-  "PropertyImage": {
-    "dataSource": "db",
-    "public": true
-  },
   "container": {
     "dataSource": "storage",
+    "public": true
+  },
+  "city": {
+    "dataSource": "db",
+    "public": true
+  },
+  "destination": {
+    "dataSource": "db",
+    "public": true
+  },
+  "beach-city": {
+    "dataSource": "db",
+    "public": true
+  },
+  "outdoor-city": {
+    "dataSource": "db",
+    "public": true
+  },
+  "culture-city": {
+    "dataSource": "db",
+    "public": true
+  },
+  "nightlife-city": {
+    "dataSource": "db",
+    "public": true
+  },
+  "digitalnomad-city": {
+    "dataSource": "db",
     "public": true
   }
 }

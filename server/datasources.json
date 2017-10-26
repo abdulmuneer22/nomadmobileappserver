@@ -3,10 +3,10 @@
     "host": "127.0.0.1",
     "port": 27017,
     "url": "",
-    "database": "RentalAPP",
-    "password": "1234567890",
+    "database": "nomadmobileappdb",
+    "password": "n0maDu$er",
     "name": "db",
-    "user": "rentalAppUser",
+    "user": "nomaduser",
     "connector": "mongodb"
   },
   "storage": {

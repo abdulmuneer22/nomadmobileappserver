@@ -1,6 +1,6 @@
 {
-  "name": "Location",
-  "plural": "Locations",
+  "name": "outdoor-city",
+  "plural": "outdoor-cities",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -13,13 +13,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "RentalProperty": {
-      "type": "hasMany",
-      "model": "RentalProperty",
-      "foreignKey": "locationId"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }
